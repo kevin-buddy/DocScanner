@@ -1,39 +1,45 @@
 ```
-# Dependencies
+# Flutter/Dart specific
 .dart_tool/
+.build/
 .packages
-.pub/
+.pub-cache/
 pubspec.lock
+
+# Build artifacts
+build/
+*.apk
+*.aab
+*.ipa
+*.app
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Dependencies
+vendor/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+*.tmp
 
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE specific
-.idea/
+# IDE
 .vscode/
+.idea/
 *.swp
 *.swo
 
-# Build outputs
-build/
-dist/
-target/
-
-# Python related (if applicable)
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
+# OS
+.DS_Store
+Thumbs.db
 ```

@@ -1,12 +1,13 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
+import 'package:camera/camera.dart';
 
 import '../models/scanned_document.dart';
-import 'camera_service.dart';
-import 'image_processing_service.dart';
-import 'ocr_service.dart';
-import 'pdf_service.dart';
+import '../services/camera_service.dart';
+import '../services/image_processing_service.dart';
+import '../services/ocr_service.dart';
+import '../services/pdf_service.dart';
 
 /// Provider class for managing scan state and operations
 class ScanProvider with ChangeNotifier {
@@ -32,6 +33,7 @@ class ScanProvider with ChangeNotifier {
   bool get isProcessing => _isProcessing;
   bool get isLoading => _isLoading;
   String? get error => _error;
+  CameraController? get cameraController => _cameraService.cameraController;
 
   /// Initialize camera
   Future<void> initializeCamera() async {
