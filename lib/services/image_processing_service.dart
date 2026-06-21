@@ -106,9 +106,7 @@ class ImageProcessingService {
         final luminance = pixel.r; // Already grayscale
         
         final newValue = luminance > threshold ? 255 : 0;
-        grayscale.setPixelR(x, y, newValue);
-        grayscale.setPixelG(x, y, newValue);
-        grayscale.setPixelB(x, y, newValue);
+        grayscale.setPixelRgb(x, y, newValue, newValue, newValue);
       }
     }
     
