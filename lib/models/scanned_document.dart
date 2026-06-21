@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:typed_data';
+import 'package:flutter/material.dart';
 
 /// Represents a single scanned document page
 class ScannedPage {

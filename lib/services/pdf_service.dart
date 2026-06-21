@@ -78,7 +78,7 @@ class PDFService {
                     child: pw.Text(
                       page.ocrText ?? '',
                       style: pw.TextStyle(
-                        color: PdfColors.transparent,
+                        color: PdfColors.grey300, // Use a very light color instead of transparent
                         fontSize: 1,
                       ),
                     ),

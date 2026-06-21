@@ -26,7 +26,10 @@ class _CameraScreenState extends State<CameraScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.photo_library),
-            onPressed: () => _pickFromGallery(context),
+            onPressed: () {
+              final scanProvider = Provider.of<ScanProvider>(context, listen: false);
+              _pickFromGallery(scanProvider);
+            },
           ),
         ],
       ),
