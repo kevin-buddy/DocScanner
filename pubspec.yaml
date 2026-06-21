@@ -1,0 +1,56 @@
+name: doc_scanner
+description: A CamScanner clone app built with Flutter that captures documents, straightens them, applies filters, converts to PDF, and uses OCR for text enhancement.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & State Management
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  
+  # Camera & Image Processing
+  camera: ^0.10.5
+  image_picker: ^1.0.4
+  image_cropper: ^5.0.1
+  image: ^4.1.7
+  
+  # Document Scanning & Edge Detection
+  document_scanner: ^1.0.0
+  
+  # PDF Generation
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  
+  # OCR (Optical Character Recognition)
+  google_mlkit_text_recognition: ^0.11.0
+  
+  # Path & File Handling
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  share_plus: ^7.2.1
+  
+  # Permissions
+  permission_handler: ^11.1.0
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  uuid: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
