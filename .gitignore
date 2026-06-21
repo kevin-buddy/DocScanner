@@ -2,62 +2,38 @@
 # Dependencies
 .dart_tool/
 .packages
+.pub/
+pubspec.lock
 
-# Build outputs
-build/
-*.apk
-*.aab
-*.app
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Temporary files
-*.tmp
-*.temp
-*.log
-
-# Environment variables
+# Environment
 .env
 .env.local
 *.env.*
 
-# IDE files
-.idea/
-.vscode/
-*.swp
-*.swo
+# Logs
+*.log
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Coverage
-coverage/
-*.lcov
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Build outputs
+build/
+dist/
+target/
+
+# Python related (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
 ```
