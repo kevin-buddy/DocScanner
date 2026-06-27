@@ -5,12 +5,14 @@ A powerful document scanning application built with Flutter that captures docume
 ## Features
 
 ### 📸 Camera & Image Capture
+
 - Take photos of documents using the device camera
 - Pick images from the gallery
 - Real-time camera preview with corner guides
 - Support for multiple pages per document
 
 ### ✨ Image Processing
+
 - **Perspective Correction**: Automatically detect and straighten document edges
 - **Filters**:
   - None (original)
@@ -23,18 +25,21 @@ A powerful document scanning application built with Flutter that captures docume
 - **Crop**: Manual corner adjustment for precise cropping
 
 ### 📄 PDF Generation
+
 - Convert scanned documents to PDF
 - Searchable PDF support with OCR text layer
 - Multiple page support
 - Share PDF directly from the app
 
 ### 🔍 OCR (Optical Character Recognition)
+
 - Extract text from scanned documents using Google ML Kit
 - Text is embedded in PDF for searchability
 - Clear text visibility when zooming in
 - Automatic text extraction on scan
 
 ### 📱 User Interface
+
 - Modern Material Design 3 UI
 - Document list with thumbnails
 - Page thumbnails in editor
@@ -83,6 +88,7 @@ lib/
 ## Getting Started
 
 ### Prerequisites
+
 - Flutter SDK 3.0.0 or higher
 - Android Studio / Xcode
 - Android SDK (for Android development)
@@ -91,12 +97,14 @@ lib/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd doc_scanner
 ```
 
 2. Install dependencies:
+
 ```bash
 flutter pub get
 ```
@@ -104,7 +112,9 @@ flutter pub get
 3. Configure platform-specific settings:
 
 #### Android
+
 Add to `android/app/src/main/AndroidManifest.xml`:
+
 ```xml
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -112,10 +122,11 @@ Add to `android/app/src/main/AndroidManifest.xml`:
 ```
 
 Update `android/app/build.gradle`:
+
 ```gradle
 android {
     compileSdkVersion 33
-    
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
@@ -124,7 +135,9 @@ android {
 ```
 
 #### iOS
+
 Add to `ios/Runner/Info.plist`:
+
 ```xml
 <key>NSCameraUsageDescription</key>
 <string>We need camera access to scan documents</string>
@@ -133,6 +146,7 @@ Add to `ios/Runner/Info.plist`:
 ```
 
 4. Run the app:
+
 ```bash
 flutter run
 ```
@@ -169,7 +183,7 @@ The app follows the **Provider** state management pattern with a service-layer a
 ✅ Responsive UI with Material Design 3  
 ✅ Proper resource disposal  
 ✅ Type-safe enums and extensions  
-✅ Comprehensive documentation  
+✅ Comprehensive documentation
 
 ## Future Enhancements
 
